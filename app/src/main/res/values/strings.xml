@@ -72,4 +72,6 @@
 
     <string name="splash_screen_description">Vuforia Splash</string>
 
+    <string name="facebook_app_id">374613183012558</string>
+    <string name="fb_login_protocol_scheme">fb374613183012558</string>
 </resources>

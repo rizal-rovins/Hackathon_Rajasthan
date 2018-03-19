@@ -8,23 +8,12 @@
     android:foregroundTint="@color/light_gray"
     tools:context="june.seven.ark.fourpointzero.LoginActivity">
 
-    <android.support.v7.widget.LinearLayoutCompat
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:padding="30dp">
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
 
-        <mehdi.sakout.fancybuttons.FancyButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            fancy:fb_defaultColor="#3b5998"
-            fancy:fb_focusColor="#5474b8"
-            fancy:fb_fontIconResource=""
-            fancy:fb_fontIconSize="30dp"
-            fancy:fb_iconPosition="left"
-            fancy:fb_radius="5dp"
-            fancy:fb_text="Login with Facebook"></mehdi.sakout.fancybuttons.FancyButton>
-    </android.support.v7.widget.LinearLayoutCompat>
 </android.widget.RelativeLayout>

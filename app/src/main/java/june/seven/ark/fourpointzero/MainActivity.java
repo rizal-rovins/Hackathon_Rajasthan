@@ -1,6 +1,7 @@
 package june.seven.ark.fourpointzero;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,12 +16,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 
+import de.hdodenhof.circleimageview.CircleImageView;
 import june.seven.ark.fourpointzero.samples.VuforiaSamples.app.CloudRecognition.CloudReco;
 
 public class MainActivity extends AppCompatActivity
@@ -30,7 +36,7 @@ public class MainActivity extends AppCompatActivity
     ExpandableListAdapter expandableListAdapter;
     List<String> expandableListTitle;
     LinkedHashMap<String, List<String>> expandableListDetail;
-
+    Intent nextActivity;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -70,8 +76,12 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        View hView =  navigationView.getHeaderView(0);
+        Picasso.get().load((Uri) getIntent().getExtras().get("uri")).into((CircleImageView)hView.findViewById(R.id.profile_img));
 
+        ((TextView)hView.findViewById(R.id.profile_email)).setText(getIntent().getExtras().getString("email"));
 
+        ((TextView)hView.findViewById(R.id.profile_name)).setText(getIntent().getExtras().getString("name"));
 
         expandableListView = (ExpandableListView) findViewById(R.id.expandableListView);
         expandableListDetail = ExpandableListDataPump.getData();
@@ -83,9 +93,17 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onGroupExpand(int groupPosition) {
                 if(expandableListAdapter.getChildrenCount(groupPosition)!=0)
-                Toast.makeText(getApplicationContext(),
+                    Toast.makeText(getApplicationContext(),
                         expandableListTitle.get(groupPosition) + " List Expanded.",
-                        Toast.LENGTH_SHORT).show();
+                            Toast.LENGTH_SHORT).show();
+
+                else
+                {
+                    if(groupPosition==3)
+                    {
+                        nextActivity=new Intent(getApplicationContext(),ReviewActivity.class);
+                    }
+                }
 
             }
         });

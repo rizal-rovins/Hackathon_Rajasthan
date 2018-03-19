@@ -39,4 +39,8 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     compile files("$VUFORIA_SDK_DIR/$JAR_DIR/Vuforia.jar")
     compile 'com.github.medyo:fancybuttons:1.8.4'
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    compile 'de.hdodenhof:circleimageview:2.2.0'
 }
