@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/camera_overlay_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto">
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar"
+            android:id="@+id/loading_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        <ImageView
+            android:id="@+id/scan_line"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:src="@drawable/scanline"
+            android:scaleType="fitXY"/>
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            fancy:fb_text="Hawa Mahal"
+            fancy:fb_textSize="35dp"
+            fancy:fb_textColor="#000000"
+            fancy:fb_radius="20dp"
+            fancy:fb_textGravity="center"
+            fancy:fb_defaultColor="#B3E5FC"
+            >
+
+        </mehdi.sakout.fancybuttons.FancyButton>
+</RelativeLayout>
