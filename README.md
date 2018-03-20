@@ -53,3 +53,6 @@ View Stories/Reviews/Description/history of the place based on location and by u
 <img src="/img/Screenshot_FourPointZero_20180321-002416.png" width="300"/>
 
 Integrating all these services within a chatbot
+
+
+<img src="/img/2018-03-20.png" width="300"/>
