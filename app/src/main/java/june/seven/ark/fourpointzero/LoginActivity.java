@@ -25,6 +25,7 @@ import com.facebook.login.widget.LoginButton;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -83,6 +84,7 @@ public class LoginActivity extends AppCompatActivity
                             profileTracker.stopTracking();
                             Name=currentProfile.getName();
 
+
                         }
                     };
                     // no need to call startTracking() on mProfileTracker
@@ -99,6 +101,7 @@ public class LoginActivity extends AppCompatActivity
                             @Override
                             public void onCompleted(JSONObject object, GraphResponse response) {
                                 final JSONObject jsonObject = response.getJSONObject();
+                                Log.d("TAGG",jsonObject.toString());
                                 try{
                                     email = jsonObject.getString("email");
                                     gender = jsonObject.getString("gender");
@@ -107,11 +110,9 @@ public class LoginActivity extends AppCompatActivity
                                     gender=gender.substring(0,1);
 
                                     jsonObject.put("email",email);
-                                    jsonObject.put("gender",gender);
                                     jsonObject.put("dob",DOB);
                                     jsonObject.put("name",Name);
                                     jsonObject.put("fbid",fid);
-
                                     StringEntity entity = new StringEntity(jsonObject.toString());
                                     entity.setContentType(new BasicHeader(HTTP.CONTENT_TYPE, "application/json"));
 
