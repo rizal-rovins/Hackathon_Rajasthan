@@ -12,6 +12,5 @@ We aim to provide all the tourist support services in a single platform.
 Login with Facebook
 Getting interests, likes and profile using graph Api to SUGGEST PLACES.
 
- <img src="/img/Screenshot_FourPointZero_20180321-002645.png" width="350"/>
- 
- <img src="/img/Screenshot_FourPointZero_20180321-002623.png" width="350"/>
+ <img src="/img/Screenshot_FourPointZero_20180321-002645.png" width="300"/>
+ <img src="/img/Screenshot_FourPointZero_20180321-002623.png" width="300"/>
