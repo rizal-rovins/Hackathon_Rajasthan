@@ -56,3 +56,8 @@ Integrating all these services within a chatbot
 
 
 <img src="/img/2018-03-20.png" width="300"/>
+
+<img src="/img/2018-03-20 (1).png" width="300"/>
+<img src="/img/2018-03-20 (2).png" width="300"/>
+<img src="/img/2018-03-202.png" width="300"/>
+<img src="/img/2018-03-20q.png" width="300"/>
