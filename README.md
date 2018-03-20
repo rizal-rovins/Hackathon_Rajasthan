@@ -29,3 +29,13 @@ Hire Tourist Support
 
 
 <img src="/img/Screenshot_FourPointZero_20180321-002713.png" width="300"/>
+
+View Stories/Reviews/Description/history of the place based on location and by using real time image recognition.
+
+<img src="/img/Screenshot_FourPointZero_20180321-002343.png" width="300"/>
+
+
+<img src="/img/Screenshot_FourPointZero_20180321-002407.png" width="300"/>
+
+<img src="/img/Screenshot_FourPointZero_20180321-002416.png" width="300"/>
+
