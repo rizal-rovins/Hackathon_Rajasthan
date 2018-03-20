@@ -9,7 +9,7 @@ We aim to provide all the tourist support services in a single platform.
 
 
 Login with Facebook
-Places will be suggested to the user by fetching interests ,likes and profile using the Facebook Graph API.
+Places will be suggested to the user by fetching interests, likes and profile using the Facebook Graph API.
 
  <img src="/img/Screenshot_FourPointZero_20180321-002645.png" width="300"/>
  <img src="/img/Screenshot_FourPointZero_20180321-002623.png" width="300"/>
@@ -28,10 +28,13 @@ Hire Tourist Support
       
 Providing detailed information on all the interesting things at a particular location.
 
-     1.Food
-	    2.Events
-	    3.Famous Places/Markets
-	    4.Things to do
+      1.Food
+      
+      2.Events
+      
+      3.Famous Places/Markets
+      
+      4.Things to do
     
 Health and Security services available based on location.
 
