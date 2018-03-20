@@ -43,4 +43,5 @@ dependencies {
     compile 'com.loopj.android:android-async-http:1.4.9'
     implementation 'com.squareup.picasso:picasso:2.71828'
     compile 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'com.github.dexafree:materiallist:3.2.1'
 }
