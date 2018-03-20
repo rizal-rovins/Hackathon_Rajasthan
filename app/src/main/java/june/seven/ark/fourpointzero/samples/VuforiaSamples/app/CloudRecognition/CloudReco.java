@@ -13,6 +13,7 @@ package june.seven.ark.fourpointzero.samples.VuforiaSamples.app.CloudRecognition
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.graphics.Color;
@@ -23,6 +24,7 @@ import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.view.animation.Animation;
 import android.view.animation.LinearInterpolator;
@@ -30,6 +32,7 @@ import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
+import com.facebook.FacebookSdk;
 import com.vuforia.CameraDevice;
 import com.vuforia.ObjectTracker;
 import com.vuforia.State;
@@ -41,6 +44,8 @@ import com.vuforia.TrackerManager;
 import com.vuforia.Vuforia;
 
 import june.seven.ark.fourpointzero.R;
+import june.seven.ark.fourpointzero.ReviewActivity;
+import june.seven.ark.fourpointzero.StoriesActivity;
 import june.seven.ark.fourpointzero.samples.SampleApplication.SampleApplicationControl;
 import june.seven.ark.fourpointzero.samples.SampleApplication.SampleApplicationException;
 import june.seven.ark.fourpointzero.samples.SampleApplication.SampleApplicationSession;
@@ -116,6 +121,8 @@ public class CloudReco extends Activity implements SampleApplicationControl,
     // declare scan line and its animation
     private View scanLine;
     private FancyButton history_button;
+    private FancyButton review_button;
+    private FancyButton rating_button;
     private TranslateAnimation scanAnimation;
     
     private double mLastErrorTime;
@@ -312,6 +319,10 @@ public class CloudReco extends Activity implements SampleApplicationControl,
 
         scanLine = mUILayout.findViewById(R.id.scan_line);
         history_button= (FancyButton) mUILayout.findViewById(R.id.history);
+        rating_button=(FancyButton)mUILayout.findViewById(R.id.stories);
+        review_button=(FancyButton)mUILayout.findViewById(R.id.reviews);
+        rating_button.setVisibility(View.GONE);
+        review_button.setVisibility(View.GONE);
         history_button.setVisibility(View.GONE);
         scanLine.setVisibility(View.GONE);
         scanAnimation = new TranslateAnimation(
@@ -326,6 +337,30 @@ public class CloudReco extends Activity implements SampleApplicationControl,
 
         addContentView(mUILayout, new LayoutParams(LayoutParams.MATCH_PARENT,
                 LayoutParams.MATCH_PARENT));
+
+
+        rating_button.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent=new Intent(getBaseContext(), StoriesActivity.class);
+                intent.putExtra("place_id","ChIJpQvTG0uxbTkRDLLMHlNdDoY");
+                startActivity(intent);
+            }
+        });
+
+
+        review_button.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent=new Intent(getBaseContext(), ReviewActivity.class);
+                intent.putExtra("place_id","ChIJpQvTG0uxbTkRDLLMHlNdDoY");
+                startActivity(intent);
+            }
+        });
         
     }
     
@@ -903,6 +938,8 @@ public class CloudReco extends Activity implements SampleApplicationControl,
                 scanLine.setVisibility(View.VISIBLE);
                 scanLine.setAnimation(scanAnimation);
                 history_button.setVisibility(View.GONE);
+                review_button.setVisibility(View.GONE);
+                rating_button.setVisibility(View.GONE);
             }
         });
     }
@@ -914,6 +951,8 @@ public class CloudReco extends Activity implements SampleApplicationControl,
                 scanLine.setVisibility(View.GONE);
                 scanLine.clearAnimation();
                 history_button.setVisibility(View.VISIBLE);
+                review_button.setVisibility(View.VISIBLE);
+                rating_button.setVisibility(View.VISIBLE);
             }
         });
     }

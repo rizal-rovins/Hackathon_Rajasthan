@@ -37,12 +37,23 @@ public class ReviewActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_review);
 
-        List<String> str=Arrays.asList("Hello", "World!", "How", "Are", "You");
-
         try
         {
             final JSONObject jsonObject = new JSONObject();
-            jsonObject.put("placeid", "ChIJ-w3Sy1qwbTkRK34UR2ffIWI");
+
+            try
+            {
+                if(!getIntent().getExtras().getString("place_id").equals(null))
+                    jsonObject.put("placeid", "ChIJpQvTG0uxbTkRDLLMHlNdDoY");
+
+                else
+                    jsonObject.put("placeid", "ChIJ-w3Sy1qwbTkRK34UR2ffIWI");
+
+            }
+            catch (Exception e)
+            {
+                jsonObject.put("placeid", "ChIJ-w3Sy1qwbTkRK34UR2ffIWI");
+            }
 
             StringEntity entity = null;
 

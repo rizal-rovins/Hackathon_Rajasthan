@@ -35,8 +35,19 @@ public class StoriesActivity extends AppCompatActivity
         try
         {
             final JSONObject jsonObject = new JSONObject();
-            jsonObject.put("placeid", "ChIJ-w3Sy1qwbTkRK34UR2ffIWI");
+            try
+            {
+                if(!getIntent().getExtras().getString("place_id").equals(null))
+                    jsonObject.put("placeid", "ChIJpQvTG0uxbTkRDLLMHlNdDoY");
 
+                else
+                    jsonObject.put("placeid", "ChIJ-w3Sy1qwbTkRK34UR2ffIWI");
+
+            }
+            catch (Exception e)
+            {
+                jsonObject.put("placeid", "ChIJ-w3Sy1qwbTkRK34UR2ffIWI");
+            }
             StringEntity entity = null;
 
             entity = new StringEntity(jsonObject.toString());

@@ -34,4 +34,42 @@
             >
 
         </mehdi.sakout.fancybuttons.FancyButton>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/reviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fancy:fb_defaultColor="#B3E5FC"
+                    fancy:fb_radius="20dp"
+                    fancy:fb_text="Reviews"
+                    fancy:fb_textColor="#000000"
+                    fancy:fb_textGravity="center"
+                    fancy:fb_textSize="20dp">
+
+                </mehdi.sakout.fancybuttons.FancyButton>
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/stories"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fancy:fb_defaultColor="#B3E5FC"
+                    fancy:fb_radius="20dp"
+                    fancy:fb_text="Stories"
+                    fancy:fb_textColor="#000000"
+                    fancy:fb_textGravity="center"
+                    fancy:fb_textSize="20dp">
+
+                </mehdi.sakout.fancybuttons.FancyButton>
+        </RelativeLayout>
 </RelativeLayout>
