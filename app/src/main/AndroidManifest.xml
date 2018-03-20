@@ -5,10 +5,10 @@
     <uses-feature android:glEsVersion="0x00020000" />
     <uses-feature android:name="android.hardware.camera" />
 
-    <!--         Add this permission to get access to the camera. -->
+    <!-- Add this permission to get access to the camera. -->
     <uses-permission android:name="android.permission.CAMERA" />
 
-    <!--         Add this permission to allow opening network sockets. -->
+    <!-- Add this permission to allow opening network sockets. -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <!--
@@ -27,30 +27,27 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".LoginActivity"
-            android:label="Login">
-
-
-        </activity>
+            android:label="Login"></activity>
         <activity
             android:name=".samples.VuforiaSamples.app.CloudRecognition.CloudReco"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
             android:launchMode="singleTask"
-            android:theme="@style/SampleAppsTheme"></activity>
+            android:theme="@style/SampleAppsTheme" />
         <activity
             android:name=".samples.VuforiaSamples.ui.ActivityList.AboutScreen"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
-            android:launchMode="singleTask"></activity>
+            android:launchMode="singleTask" />
         <activity
             android:name=".samples.VuforiaSamples.ui.ActivityList.ActivityLauncher"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
-            android:launchMode="singleTask"></activity>
+            android:launchMode="singleTask" />
         <activity
             android:name=".samples.VuforiaSamples.ui.ActivityList.ActivitySplashScreen"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
-            android:launchMode="singleTask"></activity>
+            android:launchMode="singleTask" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -72,14 +69,19 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-        <activity android:name=".ReviewActivity"
+        <activity
+            android:name=".ReviewActivity"
             android:label="Reviews">
+        </activity>
+        <activity android:name=".StoriesActivity"
+            android:label="Stories">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
