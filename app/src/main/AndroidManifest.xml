@@ -26,9 +26,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:label="Tourist Support"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".LoginActivity"
             android:label="Login">
@@ -78,9 +77,9 @@
         </activity>
         <activity
             android:name=".ReviewActivity"
-            android:label="Reviews">
-        </activity>
-        <activity android:name=".StoriesActivity"
+            android:label="Reviews"></activity>
+        <activity
+            android:name=".StoriesActivity"
             android:label="Stories">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -88,7 +87,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".PlacesToVisit"
+            android:label="Places to Visit">
 
+        </activity>
     </application>
 
 </manifest>

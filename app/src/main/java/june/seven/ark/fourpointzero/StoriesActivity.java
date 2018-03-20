@@ -42,7 +42,6 @@ public class StoriesActivity extends AppCompatActivity
 
                 else
                     jsonObject.put("placeid", "ChIJ-w3Sy1qwbTkRK34UR2ffIWI");
-
             }
             catch (Exception e)
             {

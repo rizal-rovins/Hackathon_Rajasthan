@@ -131,6 +131,7 @@ public class LoginActivity extends AppCompatActivity
                                                 Intent intent=new Intent(getApplicationContext(),MainActivity.class);
                                                 intent.putExtra("name",Name);
                                                 intent.putExtra("email",email);
+                                                intent.putExtra("fid",fid);
                                                 intent.putExtra("uri",Profile.getCurrentProfile().getProfilePictureUri(100,100));
                                                 Log.d("URI",String.valueOf(Profile.getCurrentProfile().getProfilePictureUri(100,100)));
                                                 startActivity(intent);

@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -92,18 +93,22 @@ public class MainActivity extends AppCompatActivity
 
             @Override
             public void onGroupExpand(int groupPosition) {
-                if(expandableListAdapter.getChildrenCount(groupPosition)!=0)
-                    Toast.makeText(getApplicationContext(),
-                        expandableListTitle.get(groupPosition) + " List Expanded.",
-                            Toast.LENGTH_SHORT).show();
 
-                else
-                {
-                    if(groupPosition==3)
+
+                    if(groupPosition==0)
+                    {
+                        nextActivity=new Intent(getApplicationContext(),PlacesToVisit.class);
+                        nextActivity.putExtra("fid",getIntent().getExtras().getString("fid"));
+                        startActivity(nextActivity);
+                    }
+
+                    else if(groupPosition==3)
                     {
                         nextActivity=new Intent(getApplicationContext(),ReviewActivity.class);
+                        startActivity(nextActivity);
                     }
-                }
+
+                Log.d("group position",String.valueOf(groupPosition));
 
             }
         });
