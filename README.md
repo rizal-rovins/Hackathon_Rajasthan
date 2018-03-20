@@ -26,6 +26,19 @@ Hire Tourist Support
       3.Guides
       
       4.Photographer
+      
+More in this city
+
+     1.Food
+	    2.Events
+	    3.Famous Places/Markets
+	    4.Things to do
+    
+Health and Security services available based on location.
+
+Find Souvenirs (Specialities of Rajasthan).
+
+
 
 
 <img src="/img/Screenshot_FourPointZero_20180321-002713.png" width="300"/>
@@ -39,3 +52,4 @@ View Stories/Reviews/Description/history of the place based on location and by u
 
 <img src="/img/Screenshot_FourPointZero_20180321-002416.png" width="300"/>
 
+Integrating all these services within a chatbot
