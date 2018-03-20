@@ -31,6 +31,8 @@
         <activity
             android:name=".LoginActivity"
             android:label="Login">
+
+
         </activity>
         <activity
             android:name=".samples.VuforiaSamples.app.CloudRecognition.CloudReco"
@@ -70,7 +72,8 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-        <activity android:name=".ReviewActivity">
+        <activity android:name=".ReviewActivity"
+            android:label="Reviews">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
