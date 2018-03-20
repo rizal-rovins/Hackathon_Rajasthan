@@ -1,10 +1,9 @@
-# Hackathon_Rajasthan
-Tourist Support Application
 
 ## The Problem Statement
 A lot of tourists visit Rajasthan but they face many problems due to lack of services.
 We aim to provide all the tourist support services in a single platform.
 
+#Tourist Support Application
 
  <img src="/img/Screenshot_FourPointZero_20180321-002228.png" width="30"/>
 
