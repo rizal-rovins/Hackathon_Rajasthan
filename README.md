@@ -43,7 +43,7 @@ Find Souvenirs (Specialities of Rajasthan).
 
 <img src="/img/Screenshot_FourPointZero_20180321-002713.png" width="300"/>
 
-View Stories/Reviews/Description/history of the place based on location and by using real time image recognition.
+View Stories/Reviews/Description/history of the place based on location and by using real time image recognition using Vuforia AR.
 
 <img src="/img/Screenshot_FourPointZero_20180321-002343.png" width="300"/>
 
