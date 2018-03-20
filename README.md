@@ -18,8 +18,14 @@ Getting interests, likes and profile using graph Api to SUGGEST PLACES.
 PAIR with Another Person with similar fb interests so that they can travel and enjoy together.
 
 Hire Tourist Support 
+      
       1.Locals 
+      
       2.Translator
+      
       3.Guides
-	     4.Photographer
+      
+      4.Photographer
+
+
 <img src="/img/Screenshot_FourPointZero_20180321-002713.png" width="300"/>
