@@ -9,12 +9,12 @@ We aim to provide all the tourist support services in a single platform.
 
 
 Login with Facebook
-Getting interests, likes and profile using graph Api to SUGGEST PLACES.
+Places will be suggested to the user by fetching interests ,likes and profile using the Facebook Graph API.
 
  <img src="/img/Screenshot_FourPointZero_20180321-002645.png" width="300"/>
  <img src="/img/Screenshot_FourPointZero_20180321-002623.png" width="300"/>
  
-PAIR with Another Person with similar fb interests so that they can travel and enjoy together.
+Providing an option to Pair with Another Person with similar Facebook interests so that they can travel and enjoy together and also save money.
 
 Hire Tourist Support 
       
@@ -26,7 +26,7 @@ Hire Tourist Support
       
       4.Photographer
       
-More in this city
+Providing detailed information on all the interesting things at a particular location.
 
      1.Food
 	    2.Events
@@ -42,7 +42,7 @@ Find Souvenirs (Specialities of Rajasthan).
 
 <img src="/img/Screenshot_FourPointZero_20180321-002713.png" width="300"/>
 
-View Stories/Reviews/Description/history of the place based on location and by using real time image recognition using Vuforia AR.
+View Stories/Reviews/Description/History of the place based on location and by using real time image recognition using Vuforia AR.
 
 <img src="/img/Screenshot_FourPointZero_20180321-002343.png" width="300"/>
 
